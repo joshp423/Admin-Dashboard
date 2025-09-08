@@ -5,3 +5,59 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+.header {grid-area: header;}
+.sidebar {grid-area: sidebar;}
+.content {grid-area: contentBox;}
+.container {
+    display: grid;
+    grid-template: 1fr 6fr / 1fr 5fr;
+    grid-template-areas:
+    "sidebar header"
+    "sidebar contentBox";
+}
+
+.search {grid-area: search;}
+.nonSearch {grid-area: nonSearch}
+.header{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    grid-template-areas:
+    "search"
+    "nonSearch";
+
+}
+
+.search {
+    display: grid;
+    grid-template: 1fr / 3fr 1fr;
+}
+
+.searchBar {
+    grid-area: 1 / 1 / 2 / 1;
+    display: grid;
+    grid-template: 1fr / 1fr 10fr;
+}
+
+.rightSearch {
+    grid-area: 1 / 2 / 1 / 3;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+}
+
+.nonSearch {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+.greeting {
+    grid-area: 1 / 1 / 1 / 2;
+    display: grid;
+    grid-template: 1fr / 1fr 5fr;
+}
+
+
+img {
+    width: 10px;
+    height: 10px;
+}
