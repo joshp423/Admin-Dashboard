@@ -81,7 +81,7 @@
     height: 70%;
 }
 
-#pfp, #bigPFP {
+#pfp, #bigPFP, .trending>div>img {
     border-radius: 50%;
 }
 
@@ -250,7 +250,7 @@
 
 .extras {
    display: grid;
-   grid-template-rows: 4fr 1fr 4fr; 
+   grid-template-rows: 4fr 0.5fr 4fr; 
 }
 
 .iconContainer {
@@ -293,7 +293,9 @@
     padding: 12%;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: no-wrap;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: end;
 }
 
 
@@ -306,15 +308,63 @@
     font-size: 15px;
     color: #545e56;
     padding-top: 2%;
-    padding-bottom: 5%;
+    padding-bottom: 8%;
 }
 
-.announcements>div>hr {
-    margin-bottom: 5%;
-}
 
 .extras>h1 {
     font-size: 22px;
     font-weight: 600;
     align-self: flex-end;
+}
+
+.extras>p {
+    color: #545e56;
+}
+
+.trending {
+    background-color: white;
+    border-radius: 10px;
+    padding: 8%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 6%;
+    margin-top: 2%;
+}
+
+.trending>div {
+    display: flex;
+    gap:5%;
+}
+.trending>div>img {
+    width:20%;
+    height:20%;
+}
+
+.trending>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+#liam {
+    width:20%;
+    height:20%;
+}
+
+#maia {
+   width:20%;
+   height:60%; 
+}
+
+.trendingProfile {
+    color: black;
+    font-weight: 600;
+}
+
+.workingOn {
+    color:#545e56;
+    font-size: 18px;
 }
