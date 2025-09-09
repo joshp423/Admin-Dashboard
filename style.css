@@ -144,8 +144,8 @@
     background-color: #667761;
     color: #eae1df;
     padding: 12%;
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 35%;
+    padding-right: 35%;
     font-weight: 700;
     font-size: 14px;
 }
@@ -218,9 +218,40 @@
     grid-template: 1fr / 1fr 3fr;
 }
 
+.content {
+    display: grid;
+    grid-template: 1fr 15fr / 7fr 2.5fr;;
+    background-color: #eae1df;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 3%;
+    padding-bottom: 8%;
+    gap: 2%;
+}
 
+.projects {
+    grid-area: 2 / 1 / 3 / 1;
+    display: grid;
+    grid-template: repeat(3, minmax(25%, 250px)) / repeat(2, minmax(40%, 250px));
+    resize:both;
+    overflow: hidden;
+    gap: 5%;
+}
 
-img {
-    width: 10px;
-    height: 10px;
+.projects>div {
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    background-color: white;
+    padding: 10%;
+    border-left: 10px solid #545e56;
+    border-radius: 10px;
+}
+
+.extras {
+   display: grid;
+   grid-template-rows: 6.5fr 1fr 6.5fr; 
+}
+
+.announcements {
+    
 }
